@@ -2,9 +2,9 @@ import { XMarkIcon } from "@heroicons/react/20/solid";
 
 export default function Banner() {
   return (
-    <div className="flex items-center justify-center gap-x-6 bg-blue-600 py-2.5 px-6 sm:px-3.5 ">
+    <div className="absolute top-0 left-0 z-50 flex w-full items-center justify-center gap-x-6 bg-blue-600 py-2.5 px-6 sm:px-3.5">
       <p className="text-sm leading-6 text-white">
-        <a href="#">
+        <a href={process.env.NEXT_PUBLIC_APP_URL}>
           <strong className="font-semibold">BETA Programme</strong>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -14,8 +14,7 @@ export default function Banner() {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          Help us improve our product by giving us feedback and get a year
-          free&nbsp;
+          Help us improve our product&nbsp;
           <span aria-hidden="true">&rarr;</span>
         </a>
       </p>

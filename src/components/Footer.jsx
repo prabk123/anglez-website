@@ -6,7 +6,7 @@ import { NavLink } from "@/components/NavLink";
 
 export function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-gray-50">
       <Container>
         <div className="pt-16 pb-6">
           <h1 className="text-center text-3xl font-bold">
@@ -19,11 +19,11 @@ export function Footer() {
               <NavLink href="#pricing">Pricing</NavLink>
               <NavLink href="#pricing">Privacy Policy</NavLink>
               <NavLink href="#pricing">Cookie Policy</NavLink>
-              <NavLink href="#pricing">Terms</NavLink>
+              <NavLink href="/terms">Terms</NavLink>
             </div>
           </nav>
         </div>
-        <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
+        <div className="flex flex-col items-center border-t border-gray-200 py-10 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
             <Link
               href="https://twitter.com"

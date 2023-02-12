@@ -94,7 +94,7 @@ export function Header() {
   return (
     <>
       <Banner />
-      <header className="py-6 md:py-10">
+      <header className="mt-11 py-6 md:py-10">
         <Container>
           <nav className="relative z-50 flex items-center justify-between">
             <div className="flex min-w-[260px] items-center md:gap-x-12">
@@ -114,8 +114,8 @@ export function Header() {
             </div>
             <div className="">
               <div className="hidden items-center gap-x-4 md:flex">
-                <NavLink href="#pricing">Login</NavLink>
-                <Button href="/register" color="blue">
+                <NavLink href={process.env.NEXT_PUBLIC_APP_URL}>Login</NavLink>
+                <Button href={process.env.NEXT_PUBLIC_APP_URL} color="blue">
                   <span>
                     Get started{" "}
                     <span className="hidden lg:inline">for free!</span>

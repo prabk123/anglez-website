@@ -5,7 +5,7 @@ export default function Document(props) {
 
   return (
     <Html
-      className="h-full overflow-x-hidden scroll-smooth bg-white antialiased [font-feature-settings:'ss01']"
+      className="h-full bg-white antialiased [font-feature-settings:'ss01']"
       lang="en"
     >
       <Head>
@@ -20,7 +20,7 @@ export default function Document(props) {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@400;500&display=swap"
         />
       </Head>
-      <body className="flex h-full flex-col overflow-x-hidden">
+      <body className="flex h-full flex-col">
         <Main />
         <NextScript />
       </body>

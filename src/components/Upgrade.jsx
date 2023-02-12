@@ -133,12 +133,12 @@ export default function Upgrade({ hideBenefits, className }) {
         </div>
         <div className="mt-6">
           <div className="rounded-md shadow">
-            <button
+            <a
               className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-5 py-3 text-base font-medium text-white hover:bg-blue-900"
-              onClick={() => {}}
+              href={process.env.NEXT_PUBLIC_APP_URL}
             >
               Get Started
-            </button>
+            </a>
           </div>
         </div>
       </div>
