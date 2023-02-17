@@ -496,6 +496,11 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
 
+crisp-sdk-web@^1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/crisp-sdk-web/-/crisp-sdk-web-1.0.13.tgz#f378f218b5ddbe02d8652779663d085bdce46d03"
+  integrity sha512-ojTqgwdLu/qGt8Z1XTx6Q7ulkldmpTqb/+FrvqziaKKveX3+K0AgyKuhE27LXF0nF507F8caZQ43k38zqJJKQA==
+
 cross-spawn@^7.0.2:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
