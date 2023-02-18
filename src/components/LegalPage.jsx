@@ -2,7 +2,7 @@ import Layout from "./Layout";
 
 export default function LegalPage({ children, meta, title }) {
   return (
-    <Layout>
+    <Layout title={title} description={meta}>
       <div className="relative overflow-hidden bg-white py-16">
         <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
           <div

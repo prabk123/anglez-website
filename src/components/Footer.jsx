@@ -14,9 +14,10 @@ export function Footer() {
           </h1>
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex flex-col items-center justify-center gap-x-6 sm:flex-row">
+              <NavLink href="#benefits">Benefits</NavLink>
               <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Guides</NavLink>
               <NavLink href="#pricing">Pricing</NavLink>
+              <NavLink href="#faqs">FAQs</NavLink>
               <NavLink href="#pricing">Privacy Policy</NavLink>
               <NavLink href="#pricing">Cookie Policy</NavLink>
               <NavLink href="/terms">Terms</NavLink>

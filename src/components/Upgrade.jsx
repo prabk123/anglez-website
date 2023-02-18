@@ -8,9 +8,13 @@ const proPlan = {
   name: "Professional Plan",
   features: [
     "Unlimited projects",
-    "50000 word credits a month",
-    "Access to all tools",
+    "50,000 credits a month",
     "Priority support",
+    "Script generator",
+    "Hooks generator",
+    "Shots generator",
+    "Headlines & Copy generator",
+    "Audiences generator",
   ],
   credits: 50000,
   price: {
@@ -49,7 +53,7 @@ export default function Upgrade({ hideBenefits, className }) {
           {proPlan.name}
         </h3>
         <p className="mt-2 text-base text-gray-500">
-          Get more words per month by upgrading today!
+          Simple pricing that works for everyone!
         </p>
         {!hideBenefits && (
           <div className="mt-8">

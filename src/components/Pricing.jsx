@@ -107,15 +107,18 @@ export function Pricing() {
             Pricing
           </h2>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            10x your creative production today.
+            <br />
+            Create a{" "}
             <span className="relative whitespace-nowrap">
               <SwirlyDoodle className="absolute top-1/2 left-0 h-[1em] w-full fill-blue-400" />
-              <span className="relative">Simple pricing,</span>
+              <span className="relative">million dollar</span>
             </span>{" "}
-            for everyone.
+            ad tomorrow.
           </h2>
-          <p className="mt-4 text-lg">
-            It doesn’t matter what size your business is, our software won’t
-            work well for you.
+          <p className="mt-4 text-xl">
+            Get started now with our{" "}
+            <span className="font-bold text-blue-600">7 day free trial</span>.
           </p>
         </div>
         {/* <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-2 lg:px-40 xl:mx-0 xl:gap-x-8"> */}
