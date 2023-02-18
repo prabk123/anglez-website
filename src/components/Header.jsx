@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { Popover, Transition } from "@headlessui/react";
 import clsx from "clsx";
@@ -8,6 +8,7 @@ import { Container } from "@/components/Container";
 import { Logo } from "@/components/Logo";
 import { NavLink } from "@/components/NavLink";
 import Banner from "./Banner";
+import classNames from "../utils/classNames";
 
 function MobileNavLink({ href, children }) {
   return (
@@ -91,10 +92,36 @@ function MobileNavigation() {
 }
 
 export function Header() {
+  const [isSticky, setIsSticky] = useState(false);
+  const ref = useRef();
+
+  useEffect(() => {
+    const cachedRef = ref.current;
+    const observer = new window.IntersectionObserver(
+      ([e]) => setIsSticky(e.intersectionRatio < 1),
+      {
+        threshold: [1],
+        rootMargin: "-1px 0px 0px 0px",
+      }
+    );
+
+    observer.observe(cachedRef);
+
+    return function () {
+      observer.unobserve(cachedRef);
+    };
+  }, []);
+
   return (
     <>
       <Banner />
-      <header className="sticky top-0 z-50 mt-11 bg-white py-6">
+      <header
+        className={classNames(
+          isSticky ? "bg-white" : "",
+          "sticky top-0 z-50 mt-11 py-6"
+        )}
+        ref={ref}
+      >
         <Container>
           <nav className="relative z-50 flex items-center justify-between">
             <div className="flex min-w-[260px] items-center md:gap-x-12">
