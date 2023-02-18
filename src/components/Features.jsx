@@ -27,11 +27,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section
-      id="benefits"
-      aria-label="Benefits for anglez"
-      className="relative overflow-hidden pt-20 pb-28 sm:py-32"
-    >
+    <section id="benefits" aria-label="Benefits for anglez">
       <div className="overflow-hidden bg-gray-50 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">

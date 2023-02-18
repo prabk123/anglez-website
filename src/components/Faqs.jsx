@@ -28,11 +28,7 @@ const faqs = [
 
 export function Faqs() {
   return (
-    <section
-      id="faqs"
-      aria-label="FAQs for anglez"
-      className="relative overflow-hidden pt-20 pb-28 sm:py-32"
-    >
+    <section id="faqs" aria-label="FAQs for anglez">
       <div className="bg-white">
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
