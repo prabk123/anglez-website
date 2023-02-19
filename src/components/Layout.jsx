@@ -5,7 +5,7 @@ import { Header } from "./Header";
 
 export default function Layout({ children, title, description }) {
   return (
-    <div>
+    <div style={{ contain: "paint" }}>
       <Head>
         <title>{title} | Anglez</title>
         <meta name="description" content={description} />
