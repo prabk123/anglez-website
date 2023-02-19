@@ -1,10 +1,11 @@
 import { CallToAction } from "@/components/CallToAction";
 import { Faqs } from "@/components/Faqs";
 import { Hero } from "@/components/Hero";
-import Features from "../components/Features";
+import Benefits from "../components/Benefits";
 import { Pricing } from "../components/Pricing";
 import { PrimaryFeatures } from "../components/PrimaryFeatures";
 import Layout from "../components/Layout";
+import Features from "../components/Features";
 
 export default function Home() {
   return (
@@ -13,8 +14,9 @@ export default function Home() {
       description="The best ad copy writing tool out there."
     >
       <Hero />
+      <Benefits />
       <Features />
-      <PrimaryFeatures />
+      {/* <PrimaryFeatures /> */}
       <Pricing />
       <Faqs />
       {/* <CallToAction /> */}

@@ -2,25 +2,37 @@
 const faqs = [
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "What can I create with anglez.io?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
   {
     id: 2,
-    question: "What's the best thing about Switzerland?",
+    question: "What languages do you support?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
   {
     id: 3,
-    question: "What's the best thing about Switzerland?",
+    question: "What is a credit?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
   {
     id: 4,
-    question: "What's the best thing about Switzerland?",
+    question: "What happens if I reach my credit limit?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    id: 5,
+    question: "What is your refund policy?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    id: 6,
+    question: "Is the content anglez.io generates original?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
@@ -44,12 +56,13 @@ export function Faqs() {
               Have a different question and can’t find the answer you’re looking
               for? Reach out to our support team by{" "}
               <a
-                href="#"
-                className="font-semibold text-indigo-600 hover:text-indigo-500"
+                href="mailto:support@anglez.io"
+                className="font-semibold text-blue-600 hover:text-blue-500"
               >
                 sending us an email
               </a>{" "}
-              and we’ll get back to you as soon as we can.
+              or using the chat in the bottom right, and we’ll get back to you
+              as soon as we can.
             </p>
           </div>
           <div className="mt-20">

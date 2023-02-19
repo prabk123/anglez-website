@@ -4,8 +4,8 @@ import { Tab } from "@headlessui/react";
 import clsx from "clsx";
 
 import { Container } from "@/components/Container";
-import backgroundImage from "@/images/background-features.jpg";
-import screenshotExpenses from "@/images/screenshots/expenses.png";
+import shots from "@/images/screenshots/shots.png";
+import audience from "@/images/screenshots/audience.png";
 import screenshotPayroll from "@/images/screenshots/payroll.png";
 import screenshotReporting from "@/images/screenshots/reporting.png";
 import screenshotVatReturns from "@/images/screenshots/vat-returns.png";
@@ -14,13 +14,13 @@ const features = [
   {
     title: "Target Markets",
     description: "Potential customers you'd never thought of before.",
-    image: screenshotPayroll,
+    image: audience,
   },
   {
     title: "Video Shots",
     description:
       "Detailed directions to help creators make the perfect content.",
-    image: screenshotExpenses,
+    image: shots,
   },
   {
     title: "Scroll Stoppers",
@@ -95,8 +95,8 @@ export function PrimaryFeatures() {
                       className={clsx(
                         "group relative rounded-full py-1 px-4 lg:rounded-r-none lg:rounded-l-xl lg:p-6",
                         selectedIndex === featureIndex
-                          ? "bg-gray-400 lg:bg-gray-400/10 lg:ring-1 lg:ring-inset lg:ring-gray-400/10"
-                          : "hover:bg-gray-400/10 lg:hover:bg-gray-400/5"
+                          ? "bg-blue-400 lg:bg-blue-400/10 lg:ring-1 lg:ring-inset lg:ring-gray-400/10"
+                          : "hover:bg-blue-400/10 lg:hover:bg-blue-400/5"
                       )}
                     >
                       <h3>
@@ -139,41 +139,26 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 h-full w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-gray-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                      <div className="relative isolate h-full overflow-hidden bg-blue-500 px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-xl sm:pt-16 sm:pl-16 sm:pr-0 lg:mx-0 lg:max-w-none">
+                    {/* <div className="mt-10 h-full overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-gray-900/20 sm:w-auto lg:mt-0">
+                      <div className="relative isolate h-full overflow-hidden bg-blue-500 px-6 py-8 sm:mx-auto sm:max-w-2xl sm:rounded-xl lg:mx-0 lg:max-w-none">
                         <div
                           className="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-blue-100 opacity-20 ring-1 ring-inset ring-white"
                           aria-hidden="true"
-                        />
-                        <div className="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
-                          {/* <img
-                            src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
-                            alt="Product screenshot"
-                            width={2432}
-                            height={1442}
-                            className="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
-                          /> */}
-                          <img
-                            src="/script.png"
-                            alt="Product screenshot"
-                            // width={2432}
-                            // height={1442}
-                            className="-mb-12 w-[400px] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
-                          />
-                          {/* <Image
-                            className="w-full"
-                            src={feature.image}
-                            alt=""
-                            priority
-                            sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
-                          /> */}
-                        </div>
-                        <div
-                          className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 sm:rounded-xl"
-                          aria-hidden="true"
-                        />
-                      </div>
+                        /> */}
+                    <div className="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
+                      <Image
+                        className="w-full"
+                        src={feature.image}
+                        alt=""
+                        priority
+                      />
                     </div>
+                    {/* <div
+                      className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 sm:rounded-xl"
+                      aria-hidden="true"
+                    /> */}
+                    {/* </div>
+                    </div> */}
                     {/* <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-gray-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                       <Image
                         className="w-full"

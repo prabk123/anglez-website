@@ -9,10 +9,20 @@ import { Logo } from "@/components/Logo";
 import { NavLink } from "@/components/NavLink";
 import Banner from "./Banner";
 import classNames from "../utils/classNames";
+import { useRouter } from "next/router";
 
 function MobileNavLink({ href, children }) {
+  const router = useRouter();
+  const pathname = href.split("#")[0];
+  const shouldSmoothScroll = router.pathname === pathname;
+
   return (
-    <Popover.Button as={Link} href={href} className="block w-full p-2">
+    <Popover.Button
+      as={Link}
+      href={href}
+      className="block w-full p-2"
+      scroll={!shouldSmoothScroll}
+    >
       {children}
     </Popover.Button>
   );
@@ -79,11 +89,19 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
+            <MobileNavLink href="#benefits">Benefits</MobileNavLink>
             <MobileNavLink href="#features">Features</MobileNavLink>
-            <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
             <MobileNavLink href="#pricing">Pricing</MobileNavLink>
+            <MobileNavLink href="#faqs">FAQs</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
             <MobileNavLink href="/login">Sign in</MobileNavLink>
+            <Button
+              className="mt-4"
+              href={process.env.NEXT_PUBLIC_APP_URL}
+              color="blue"
+            >
+              <span>Get started for free!</span>
+            </Button>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -117,7 +135,7 @@ export function Header() {
       <Banner />
       <header
         className={classNames(
-          isSticky ? "bg-white" : "",
+          isSticky ? "bg-white shadow-md" : "",
           "sticky top-0 z-50 mt-11 py-6"
         )}
         ref={ref}
@@ -135,10 +153,10 @@ export function Header() {
               </Link>
             </div>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#benefits">Benefits</NavLink>
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
-              <NavLink href="#faqs">FAQs</NavLink>
+              <NavLink href="/#benefits">Benefits</NavLink>
+              <NavLink href="/#features">Features</NavLink>
+              <NavLink href="/#pricing">Pricing</NavLink>
+              <NavLink href="/#faqs">FAQs</NavLink>
             </div>
             <div className="">
               <div className="hidden items-center gap-x-4 md:flex">
