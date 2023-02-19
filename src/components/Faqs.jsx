@@ -4,37 +4,37 @@ const faqs = [
     id: 1,
     question: "What can I create with anglez.io?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Our AI is specifically tailored to create high quality video ad scripts, hooks, shots, headlines and copy. We have also trained it to think outside the box and help you find new target markets you never knew existed.",
   },
   {
     id: 2,
     question: "What languages do you support?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "We currently only support content generation in english. We would love to hear if you need other languages for your use case as we are always looking to improve our product.",
   },
   {
     id: 3,
-    question: "What is a credit?",
+    question: "What is your refund policy?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "During your 7 day free trial, make an informed decision if anglez.io meets the hype. If you decide to continue after your free trial, you'll be put on the professional plan. You can always cancel. If you ever need help with your account, simply email support@anglez.io.",
   },
   {
     id: 4,
     question: "What happens if I reach my credit limit?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "If you reach your credit limit you will no longer be able to generate content. However, if you need to continue to generate content, you can buy additional credits for a one off price to top up you account in a billing period.",
   },
   {
     id: 5,
-    question: "What is your refund policy?",
+    question: "What is a credit?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Credits are how we measure usage. You can think of credits as pieces of words where around 1000 credits is 500 words.",
   },
   {
     id: 6,
-    question: "Is the content anglez.io generates original?",
+    question: "Can I get a demo of the product?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Absolutely! If you're curious to see how the product works before you create an account, just get in touch via email (support@anglez.io).",
   },
 ];
 

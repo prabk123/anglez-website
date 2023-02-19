@@ -73,7 +73,7 @@ export default function Benefits() {
               // height={1442}
             /> */}
               <img
-                src="/features.png"
+                src="/screenshot.png"
                 alt="Product screenshot"
                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                 width={2432}
