@@ -71,7 +71,7 @@ export function Hero() {
           Get started for free!
         </Button>
       </div>
-      <div className="mt-16 grid grid-cols-2 gap-16 md:grid-cols-4">
+      <div className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-16">
         <div className="relative">
           <img
             className="absolute -bottom-20 -left-20 w-full"
