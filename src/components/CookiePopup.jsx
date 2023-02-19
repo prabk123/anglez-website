@@ -16,7 +16,10 @@ export default function CookiePopup() {
   }
 
   return showPopup ? (
-    <div className="fixed inset-x-0 bottom-0 flex flex-col justify-between gap-y-4 gap-x-8 bg-white p-6 shadow-lg ring-1 ring-blue-900/10 md:flex-row md:items-center lg:px-8">
+    <div
+      className="fixed inset-x-0 bottom-0 flex flex-col justify-between gap-y-4 gap-x-8 bg-white p-6 shadow-lg ring-1 ring-blue-900/10 md:flex-row md:items-center lg:px-8"
+      style={{ zIndex: 5555555 }}
+    >
       <p className="max-w-5xl text-sm leading-6 text-gray-800">
         This website uses cookies to supplement a balanced diet and provide a
         much deserved reward to the senses after consuming bland but nutritious

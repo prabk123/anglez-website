@@ -65,13 +65,6 @@ export default function Benefits() {
               </div>
             </div>
             <div className="flex items-start justify-end lg:order-first">
-              {/* <img
-              src="/content.png"
-              alt="Product screenshot"
-              className="w-[46rem] max-w-none"
-              // width={2432}
-              // height={1442}
-            /> */}
               <img
                 src="/screenshot.png"
                 alt="Product screenshot"

@@ -77,32 +77,44 @@ export function Hero() {
             className="absolute -bottom-20 -left-20 w-full"
             src="/blob.svg"
             style={{ zIndex: -1 }}
+            alt="Blob"
           />
-          <img className="w-full shadow-2xl" src="/coffee.png" />
+          <img alt="Coffee" className="w-full shadow-2xl" src="/coffee.png" />
         </div>
         <div className="relative">
           <img
             className="absolute -top-20 -left-20 w-full"
             src="/blob-1.svg"
             style={{ zIndex: -1 }}
+            alt="Blob"
           />
-          <img className="w-full shadow-2xl" src="/oodie.png" />
+          <img alt="Oodie" className="w-full shadow-2xl" src="/oodie.png" />
         </div>
         <div className="relative">
           <img
             className="absolute -bottom-20 -left-20 w-full"
             src="/blob-2.svg"
             style={{ zIndex: -1 }}
+            alt="Blob"
           />
-          <img className="w-full shadow-2xl" src="/snow.png" />
+          <img
+            alt="Snow teeth whitening"
+            className="w-full shadow-2xl"
+            src="/snow.png"
+          />
         </div>
         <div className="relative">
           <img
             className="absolute -top-20 -right-20 w-full"
             src="/blob-3.svg"
             style={{ zIndex: -1 }}
+            alt="Blob"
           />
-          <img className="w-full shadow-2xl" src="/squatch.png" />
+          <img
+            alt="Dr. Squatch"
+            className="w-full shadow-2xl"
+            src="/squatch.png"
+          />
         </div>
       </div>
     </Container>
