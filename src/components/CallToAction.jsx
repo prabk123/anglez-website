@@ -4,10 +4,10 @@ export function CallToAction() {
     <div className="bg-blue-700">
       <div className="py-24 px-6 sm:px-6 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-4xl font-bold tracking-tight text-white">
-            Boost your productivity.
+          <h2 className="text-3xl font-bold tracking-tight text-white">
+            10x your creative production today.
             <br />
-            Start using our app today.
+            Create a million dollar ad tomorrow.
           </h2>
           {/* <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-blue-200">
             Incididunt sint fugiat pariatur cupidatat consectetur sit cillum
