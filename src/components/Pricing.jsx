@@ -97,7 +97,7 @@ function Plan({ name, price, description, href, features, featured = false }) {
 export function Pricing() {
   return (
     <section id="pricing" aria-label="Pricing">
-      <div className="bg-gray-50">
+      <div className="bg-white">
         <Container className="py-16 sm:py-24">
           <div className="md:text-center">
             <h2 className="text-lg font-semibold leading-8 tracking-tight text-blue-600">
