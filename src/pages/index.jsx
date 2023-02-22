@@ -9,8 +9,8 @@ import Standout from "../components/Standout";
 export default function Home() {
   return (
     <Layout
-      title="Your creative assistant"
-      description="The best ad copy writing tool out there."
+      title="10x your winning creatives in half the time"
+      description="TThe right creative can make millions. Using a combination of expert marketers and AI, we have created the ultimate ad scripting assistant."
     >
       <Hero />
       <Benefits />

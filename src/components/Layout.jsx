@@ -8,7 +8,7 @@ export default function Layout({ children, title, description }) {
     <>
       <div style={{ contain: "paint" }}>
         <Head>
-          <title>{title} | Anglez</title>
+          <title>{title} | anglez.io</title>
           <meta name="description" content={description} />
           <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
