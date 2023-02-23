@@ -1,9 +1,29 @@
-import Image from "next/image";
-
 import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
+import { useState } from "react";
+import axios from "axios";
 
 export function Hero() {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  async function createLead(e) {
+    e.preventDefault();
+    if (!email || loading) return;
+    try {
+      setLoading(true);
+      await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/lead`, {
+        email,
+      });
+    } catch (error) {
+      console.log(error);
+    } finally {
+      window.location.assign(
+        `${process.env.NEXT_PUBLIC_APP_URL}/auth?email=${email}`
+      );
+    }
+  }
+
   return (
     <Container className="relative isolate bg-white pt-10 pb-20 text-center">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-35rem]">
@@ -60,14 +80,22 @@ export function Hero() {
             Email
           </label>
           <input
-            type="text"
-            name="email"
+            type="email"
+            name="nothing"
             id="email"
             className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm"
             placeholder="jane.doe@gmail.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <Button color="blue" href="/register" className="w-full sm:w-auto">
+        <Button
+          disabled={!email || loading}
+          color="blue"
+          className="w-full sm:w-auto"
+          onClick={createLead}
+          loading={loading}
+        >
           Get started for free!
         </Button>
       </div>
