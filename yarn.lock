@@ -182,6 +182,11 @@
     lodash.merge "^4.6.2"
     postcss-selector-parser "6.0.10"
 
+"@tapfiliate/tapfiliate-js@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@tapfiliate/tapfiliate-js/-/tapfiliate-js-1.0.2.tgz#9db4a7bd5fe96688b26ecb7e7ba1904d39b41eaf"
+  integrity sha512-W1byQF2aFAcMmlWF8QxpGQ8oueHF1p85+g+U/aMXlB5eJelMdCOvPr7q+FZ66umFcDRhcjcszO9dXlX9Nolj+w==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
