@@ -147,9 +147,6 @@ export function Header() {
                 <h1 className="text-3xl font-bold">
                   angle<span className="text-blue-600">z</span>.io
                 </h1>
-                <span className="ml-4 mt-1 inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800">
-                  BETA
-                </span>
               </Link>
             </div>
             <div className="hidden md:flex md:gap-x-6">
