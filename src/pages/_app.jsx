@@ -16,6 +16,10 @@ export default function App({ Component, pageProps }) {
   }
 
   useEffect(() => {
+    trackPage();
+  }, []);
+
+  useEffect(() => {
     router.events.on("routeChangeComplete", trackPage);
     return () => {
       router.events.off("routeChangeComplete", trackPage);
