@@ -18,6 +18,8 @@ export function Footer() {
               <NavLink href="/#features">Features</NavLink>
               <NavLink href="/#pricing">Pricing</NavLink>
               <NavLink href="/#faqs">FAQs</NavLink>
+              <NavLink href="https://anglez.tapfiliate.com">Affiliates</NavLink>
+              <NavLink href="https://changelog.anglez.io">Changelog</NavLink>
               <NavLink href="/privacy-policy">Privacy Policy</NavLink>
               <NavLink href="/cookie-policy">Cookie Policy</NavLink>
               <NavLink href="/terms">Terms</NavLink>
