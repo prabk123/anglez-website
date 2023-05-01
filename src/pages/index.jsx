@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Layout
       title="10x your winning creatives in half the time"
-      description="TThe right creative can make millions. Using a combination of expert marketers and AI, we have created the ultimate ad scripting assistant."
+      description="The right creative can make millions. Using a combination of expert marketers and AI, we have created the ultimate ad scripting assistant."
     >
       <Hero />
       <Benefits />
